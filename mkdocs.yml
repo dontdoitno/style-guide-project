@@ -1,0 +1,15 @@
+site_name: Руководство по стилю документации SONDER
+theme:
+  name: material
+  language: ru
+nav:
+  - Главная: index.md
+  - Общие принципы: principles.md
+  - Тон и стиль: tone.md
+  - Терминология и ограничения: terminology.md
+  - Орфография, числа и даты: spelling.md
+  - Структура документа: structure.md
+  - Markdown и ссылки: markdown.md
+  - Аудитории и формулировки: audiences.md
+  - Шаблон документа: template.md
+  - Чек-лист перед публикацией: checklist.md
