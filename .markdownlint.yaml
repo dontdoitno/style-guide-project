@@ -1,0 +1,4 @@
+default: true
+MD013: false     # не ограничивать длину строки
+MD033: false     # разрешить HTML при необходимости
+MD041: false
