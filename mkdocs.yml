@@ -1,16 +1,58 @@
 site_name: Руководство по стилю документации SONDER
+site_description: Единые правила написания документов, маркетинговых текстов и интерфейсных текстов SONDER
+repo_url: https://github.com/dontdoitno/style-guide-project
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 nav:
   - Главная: index.md
-  - Общие принципы: principles.md
-  - Тон и стиль: tone.md
-  - Терминология и ограничения: terminology.md
-  - Орфография, числа и даты: spelling.md
-  - Структура документа: structure.md
-  - Markdown и ссылки: markdown.md
-  - Аудитории и формулировки: audiences.md
-  - Шаблон документа: template.md
-  - Доступность: accessibility.md
-  - Чек-лист перед публикацией: checklist.md
+  - Основы:
+      - Общие принципы: principles.md
+      - Тон и стиль: tone.md
+      - Аудитории и формулировки: audiences.md
+  - Язык:
+      - Терминология и ограничения: terminology.md
+      - Орфография, числа и даты: spelling.md
+      - Тексты интерфейса и анкет: interface.md
+  - Оформление:
+      - Структура документа: structure.md
+      - Markdown и ссылки: markdown.md
+      - Шаблон документа: template.md
+      - Доступность: accessibility.md
+  - Проверка и справочник:
+      - Примеры до и после: examples.md
+      - Чек-лист перед публикацией: checklist.md
+      - Глоссарий: glossary.md
+      - История изменений: changelog.md
